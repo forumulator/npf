@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "prag.io"
 theme = "hyde"
 copyright = "Pranjal Agrawal"
+disqusShortname = "gcc42"
 
 [Author]
 	name = "Pranjal Agrawal"
