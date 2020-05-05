@@ -18,10 +18,8 @@ copyright = "Pranjal Agrawal"
 
 [params]
 	description = "The Possimpible."
-	twitter = "https://twitter.com/natethefinch"
-	github = "https://github.com/natefinch"
-	gplus = "https://plus.google.com/+NateFinch"
-	disqus = "npfio"
+	linkedin = "https://linkedin.com/in/prag"
+	github = "https://github.com/forumulator"
 	mainImage = "/phoenix.png"
 
 [markup.goldmark.renderer]

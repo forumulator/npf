@@ -58,6 +58,11 @@ hr {
   font-weight: 600;
 }
 
-./*sidebar-about *:hover {
+/*.sidebar-about *:hover {
   text-decoration: none;
 }*/
+
+.taxonomy-terms .tag-name {
+  padding: 2px 6px 4px 6px;
+  background-color: #f3f3f3;
+}
