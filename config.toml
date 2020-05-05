@@ -1,11 +1,11 @@
-baseurl = "https://npf.io"
+baseurl = "https://prag.io"
 languageCode = "en-us"
-title = "npf.io"
+title = "prag.io"
 theme = "hyde"
-copyright = "Nate Finch"
+copyright = "Pranjal Agrawal"
 
 [Author]
-	name = "Nate Finch"
+	name = "Pranjal Agrawal"
 
 [Permalinks]
 	blog = "/:year/:month/:filename/"
@@ -17,10 +17,12 @@ copyright = "Nate Finch"
 	series-desc = "series-desc"
 
 [params]
-	description = "code by Nate Finch"
+	description = "The Possimpible."
 	twitter = "https://twitter.com/natethefinch"
 	github = "https://github.com/natefinch"
 	gplus = "https://plus.google.com/+NateFinch"
 	disqus = "npfio"
-	mainImage = "/moose.svg"
+	mainImage = "/phoenix.png"
 
+[markup.goldmark.renderer]
+	unsafe = true

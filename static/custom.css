@@ -1,0 +1,63 @@
+html {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+pre {
+  tab-size:4;
+}
+
+hr {
+  border-top: 2px solid #ccc;
+}
+
+.sidebar {
+  background-color: #300030;
+}
+
+.footnote {
+  font-size: 0.7em;
+  margin-top: 0.5rem;
+}
+
+.sidebar-about h1 {
+  color: #fff;
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 4.0em;
+  margin-bottom: 0.3em;
+}
+
+.brand {
+    
+    
+}
+
+.sidebar-sticky {
+  top: 1em;
+  bottom: initial;
+}
+
+.taxonomy-terms {
+  padding-inline-start: 0px;
+}
+
+.taxonomy-terms > a {
+  color: #303030;
+  font-weight: 400;
+}
+
+.sidebar-about h1 {
+  /*font-family: 'Roboto Condensed', 'neue-haas-unica', sans-serif;*/
+  font-size: 3em;
+  font-weight: 600;
+}
+
+./*sidebar-about *:hover {
+  text-decoration: none;
+}*/
