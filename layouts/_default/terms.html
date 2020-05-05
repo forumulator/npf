@@ -9,7 +9,7 @@
     {{ $taxname := .Data.Plural }}
 
     <ul class='taxonomy-terms {{$taxname}}'>
-    {{ $base := .Site.BaseURL }}
+    {{ $base := "/" }}
     {{ $data := .Data}}
 
     {{ $desc := printf "%s-desc" .Data.Singular}}
