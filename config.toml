@@ -1,7 +1,7 @@
 baseurl = "https://prag.io"
 languageCode = "en-us"
 title = "prag.io"
-theme = "hyde"
+theme = ["hugo-redirector", "hyde"]
 copyright = "Pranjal Agrawal"
 disqusShortname = "gcc42"
 
