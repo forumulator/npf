@@ -1,5 +1,5 @@
 +++
-title = "Hugo_beyond"
+title = "Hugo, Beyond."
 date = 2020-05-22T03:50:40+02:00
 type = "post"
 +++
