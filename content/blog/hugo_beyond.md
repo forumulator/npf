@@ -1,7 +1,6 @@
 +++
 title = "Hugo_beyond"
 date = 2020-05-22T03:50:40+02:00
-draft = true
 type = "post"
 +++
 
