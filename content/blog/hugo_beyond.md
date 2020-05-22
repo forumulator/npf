@@ -16,10 +16,11 @@ With the vast number of choices out there, this can sometimes lead to analysis p
 Finally, consider the recently trending [JAMstacks](https://jamstack.org/) (or static site generators), which use the build process to hide all the complexity and generate static sites that are *ready to deploy*. If you’re building the next great social network, they might not be the best choice, but a blog *is* slightly simpler. I chose this option because static site generators are perfect for what I aim to build. They allow me the option to create my site from scratch, involve little setup, and combine the speed and simplicity of static sites with the power of `git` versioning and the beauty of Markdown editing.
 
 Two of the biggest static site generators that captured my attention were Jekyll and Hugo. Ruby-based Jekyll is in its twelfth year of development. It is vastly more mature an ecosystem with gems, themes, and countless supported plugins. In contrast, Hugo (written in Go) is much more in its infancy (version 0.69.x at the time of writing), does not support plugins, and occasionally introduces breaking changes in new versions. I still chose to go with Hugo, because it:
+
 1. **Has a small footprint**: The entire Hugo “environment” comprises a single 72 Mb cross-platform binary that can be downloaded from the [releases page](https://github.com/gohugoio/hugo/releases)
 2. **Is blazing-fast**: It can generate large sites in seconds. The speed also lends itself to its hot reloading feature, which allows you to rebuild local instances instantaneously and iterate quickly
 3. **Has a flexible theme system**: Hugo offers a simple yet powerful theme system with theme composition support so you can ‘plug-in’ components for various functions to support reasonably advanced site structures
- 
+
 Overall, Hugo embodies my interpretation of the [KISS](https://en.wikipedia.org/wiki/KISS_principle) principle well: use the simplest thing that works.
 
 ## Steps
@@ -64,6 +65,7 @@ That concludes the one-time setup. From this point forth the most frequent updat
 
 ### Deployment
 The last step to having a functioning site is deploying. Because of its simplicity, Hugo allows any possible deployment you can imagine for a static site: a manual build and push to GCS bucket, deployment using [Github pages](https://pages.github.com/), or a setup with [Netlify](https://netlify.com) integration. I went with Netlify because it:
+
 1. Has a generous quota in the free tier, more than enough to build and serve simple sites
 2. Has native Hugo support
 3. Integrates well with Github; it hooks into a configurable Github repository and deploys changes automatically 
