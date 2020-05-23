@@ -6,13 +6,20 @@
   <div class="content container">
     <div class="post">
     <h1 class="post-title">{{ .Title }}</h1>
-    <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+    <div class="post-subtitle">
+        <span class="post-author">By {{ .Site.Author.name }} ・ </span>
+        <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>    
+    </div>
     {{if .Params.series}}
 	    {{ $name := index .Params.series 0 }}
     	<p class="seriesname">Series: <a href="/series/{{$name | urlize}}">{{$name}}</a></p>
     {{end}}
     {{ .Content }}
-    
+    {{ if not (eq .Date .Lastmod) -}}
+        <span class="post-date" style="font-style: italic;padding-top: 10px;">
+            Last modified {{ .Lastmod.Format "Jan 2, 2006" }}
+        </span> 
+    {{- end }}
 
     {{ if .Params.series }}
         {{ $link := .Permalink }}

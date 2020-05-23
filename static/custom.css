@@ -1,11 +1,41 @@
+
+@media (min-width: 38em) {
+  html {
+    font-size: 20px;
+  }
+  .post-subtitle, .post-date {
+    font-size: 15px;
+  }
+}
+@media (min-width: 48em) {
+  html {
+    font-size: 15px;
+  }
+  .post-subtitle, .post-date {
+    font-size: 12px;
+  }
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
+  .post-subtitle, .post-date {
+    font-size: 15px;
+  }
+}
+
 html {
-  font-family: "Fira Sans", sans-serif;
   font-weight: 300;
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
+}
+
+h1.post-title {
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 pre {
@@ -65,4 +95,14 @@ hr {
 .taxonomy-terms .tag-name {
   padding: 2px 6px 4px 6px;
   background-color: #f3f3f3;
+}
+
+
+
+.post-subtitle, .post-date {
+  font-weight: 500;
+}
+
+.post-subtitle > span {
+  display: inline-block;
 }
