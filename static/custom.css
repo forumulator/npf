@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.post-title {
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 pre {
@@ -46,8 +46,40 @@ hr {
   border-top: 2px solid #ccc;
 }
 
+code, pre {
+    font-family: Menlo, Monaco, "Courier", monospace;
+}
+
 .sidebar {
   background-color: #300030;
+}
+
+.sidebar a {
+  padding: 0.2em;
+}
+
+.sidebar a:hover, .sidebar a:focus  {
+  text-decoration: none;
+  background-color: #fff;
+  color: #310030;
+  font-weight: 600;
+}
+
+.sidebar-sticky {
+  top: 1em;
+  bottom: initial;
+}
+
+.sidebar-about h1 {
+  color: #fff;
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
+
+.sidebar-about a {
+  padding: 0;
 }
 
 .footnote {
@@ -55,23 +87,10 @@ hr {
   margin-top: 0.5rem;
 }
 
-.sidebar-about h1 {
-  color: #fff;
-  margin-top: 0;
-  font-weight: 300;
-  font-size: 4.0em;
-  margin-bottom: 0.3em;
-}
+/*.sidebar-about *:hover {
+  text-decoration: none;
+}*/
 
-.brand {
-    
-    
-}
-
-.sidebar-sticky {
-  top: 1em;
-  bottom: initial;
-}
 
 .taxonomy-terms {
   padding-inline-start: 0px;
@@ -82,15 +101,9 @@ hr {
   font-weight: 400;
 }
 
-.sidebar-about h1 {
-  /*font-family: 'Roboto Condensed', 'neue-haas-unica', sans-serif;*/
-  font-size: 3em;
-  font-weight: 600;
+.tags a:hover, .tags a:focus {
+  text-decoration: overline;
 }
-
-/*.sidebar-about *:hover {
-  text-decoration: none;
-}*/
 
 .taxonomy-terms .tag-name {
   padding: 2px 6px 4px 6px;

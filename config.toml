@@ -18,10 +18,15 @@ disqusShortname = "gcc42"
 	series = "series"
 	series-desc = "series-desc"
 
+[markup]
+  [markup.highlight]
+    style = "monokailight"
+
 [params]
 	description = "The Possimpible."
 	linkedin = "https://linkedin.com/in/prag"
-	github = "https://github.com/forumulator"
+	github = "https://github.com/gcc42"
+	twitter = "https://twitter.com/gcc_42"
 	mainImage = "/phoenix.png"
 
 [markup.goldmark.renderer]

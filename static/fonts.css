@@ -1,0 +1,25 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+/*@import url("charter/stylesheet.css")*/
+
+/* Default website style */
+html {
+	font-family: charterregular,'Source Serif Pro',serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Fira Sans, Helvetica Neue, sans-serif; 
+}
+
+.sidebar-about h1 {
+	font-family:  'Inconsolata', 'EB Garamond', "Abril Fatface", sans-serif;
+	font-weight: 400;
+}
+
+.sidebar {
+	font-family: Fira Sans, Helvetica Neue, sans-serif;
+}
+
+.post-subtitle, .post-date {
+	font-family: Fira Sans, Helvetica Neue, sans-serif;
+}

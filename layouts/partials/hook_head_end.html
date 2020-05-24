@@ -1,6 +1,10 @@
 {{ if (fileExists "static/custom.css") -}}
   <link type="text/css" rel="stylesheet" href="/custom.css">
-  <link type="text/css" rel="stylesheet" href="/fonts.css">
+{{- end }}
+
+{{ if (fileExists "static/fonts.css") -}}
+	<link type="text/css" rel="stylesheet" href="/charter/stylesheet.css">
+	<link type="text/css" rel="stylesheet" href="/fonts.css">
 {{- end }}
 
 <!-- Favicon stuff -->

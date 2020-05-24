@@ -17,11 +17,12 @@
 
     {{/* printf "%#v" $taxname */}}
     {{ range $name, $pages := .Data.Terms }}
+      {{/* printf "%#v %#v" $name $pages */}}
       {{ $page := index $pages 0 }}
       {{ $friendly := (index (index $page.Page.Params $taxname) 0) }}
 
       {{ $pageCount := len $pages }}
-      <a href="{{$base}}/{{$data.Plural}}/{{$name}}" class="{{$taxnameSingular}}-name"> {{ $friendly }} </a> &nbsp;({{ $pageCount }} {{ if eq $pageCount 1 }}entry{{ else }}entries{{ end }})
+      <a href="{{$base}}{{$data.Plural}}/{{$name}}" class="{{$taxnameSingular}}-name"> {{ $name }} </a> &nbsp;({{ $pageCount }} {{ if eq $pageCount 1 }}entry{{ else }}entries{{ end }})
 
 
       {{ $descpages := index $desctax $name }}
