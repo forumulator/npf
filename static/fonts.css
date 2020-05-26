@@ -1,10 +1,13 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
-/*@import url("charter/stylesheet.css")*/
+/*@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');*/
+@import "font/charter.css";
+@import "font/crimson.css";
 
 /* Default website style */
 html {
-	font-family: charterregular,'Source Serif Pro',serif;
+	font-family: 'Crimson', charterregular,'Source Serif Pro',serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
