@@ -42,9 +42,27 @@
         </ul>
 	{{end}} 
 	
-    {{ template "_internal/disqus.html" . }}
 </div>
+    {{ template "_internal/disqus.html" . }}
 </div> 
 
-</body>w
+
+{{ if .HasShortcode "mermaid" -}}
+<script src="https://unpkg.com/mermaid@8.5.0/dist/mermaid.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: 'dark',
+        // themeCSS: '',
+        // cloneCssStyles: false,
+        useMaxWidth: false,
+        flowchart: { 
+                curve: 'basis',
+                width: '100%'
+        },
+        fontFamily: "fira sans, sans-serif"
+    });
+</script>
+{{- end }}
+</body>
 </html>

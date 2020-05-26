@@ -50,6 +50,10 @@ code, pre {
     font-family: Menlo, Monaco, "Courier", monospace;
 }
 
+.mermaid svg {
+  max-width: 100%;
+}
+
 .sidebar {
   background-color: #300030;
 }

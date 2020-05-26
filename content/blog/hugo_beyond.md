@@ -30,7 +30,16 @@ The first step, once you’ve decided on Hugo, is to choose a theme. Unlike Jeky
 ### Git Repositories
 My ideal repository setup adds a fork of the theme repository as a `submodule` to the source repository. Say you choose the minimalist [Hyde](https://themes.gohugo.io/hyde/) theme. Pictorially, this looks like:
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/5tuekp63yv3o69l1vugb.jpeg)
+{{<mermaid>}}
+graph LR;
+    A(Site source repository<br>`github.com/gcc42/pragio`) -->|Submodule| B(Theme fork<br>`github.com/gcc42/hyde`)
+    B -.->|fork| C(Theme upstream<br>`github.com/spf13/hyde`)
+
+classDef yellow fill:#fff2cc;
+classDef orange fill:#f96,stroke:#333,stroke-width:4px;
+class B,C yellow
+class di orange
+{{< /mermaid >}}
 
 This setup allows me to develop the site independently of my theme, yet still rebase the theme onto the upstream `HEAD` periodically. For my site I chose a custom theme based on Nate Finch’s [npf.io](https://npf.io), which is based on Hugo’s Hyde which itself is based on Jekyll’s Hyde theme. Open source, at its finest.
 
