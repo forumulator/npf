@@ -115,11 +115,36 @@ code, pre {
 }
 
 
-
 .post-subtitle, .post-date {
   font-weight: 500;
 }
 
 .post-subtitle > span {
   display: inline-block;
+}
+
+/*
+ * Add copy functionality to code blocks.
+ */
+.highlight {
+  position: relative;
+}
+
+.code-control {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 1em;
+  font-weight: 800;
+  color: #757575;
+}
+
+.code-copy:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.tippy-content {
+  font-family: sans-serif;
 }

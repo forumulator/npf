@@ -63,5 +63,14 @@
     });
 </script>
 {{- end }}
+<!-- Add tooltips using tippy -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<!-- Add copy to clipboard functionality for code -->
+<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+<script src="/code_copy.js"></script>
+<script type="text/javascript">
+    tippy('[data-tippy-content]');
+</script>
 </body>
 </html>
