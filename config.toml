@@ -27,7 +27,7 @@ disqusShortname = "gcc42"
 	linkedin = "https://linkedin.com/in/prag"
 	github = "https://github.com/gcc42"
 	twitter = "https://twitter.com/gcc_42"
-	mainImage = "/phoenix.png"
+	mainImage = "/cloud.svg"
 
 [markup.goldmark.renderer]
 	unsafe = true
