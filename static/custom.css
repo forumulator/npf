@@ -47,7 +47,9 @@ h1.post-title {
   font-weight: 400;
 }
 
-.post h3, .post h4 {
+.post h1, .post h2,
+.post h3, .post h4,
+.post h5, .post h6 {
   line-height: unset;
 }
 
