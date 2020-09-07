@@ -23,9 +23,10 @@ List of devices attached
 
 ### Backing up the app data
 This took me a bit of time because it's not clear which app 'Now playing' is associated with. You can access the history in Settings > Sound, but it really wouldn't make sense for it to be integrated with the settings app. So it should contain, for example, to 'now playing' or 'music' in the name, right? Wrong. After a bit of elimination from system apps plus a bit of Googling tells me that the correct app is **Pixel Ambient Servies**.
-The next step is to figure out which package the app corresponds to, which is easy to do. Listing the system packages (`./adb.exe shell pm packages list -s`) and grepping for the phrase `com.google` made it fairly easy; the package is `com.google.intelligence.sense`.
 
-The next part required a bit of luck, and thankfully, Google hasn't disabled the `android:allowBackup` flag in the app. If they had, this would have been a dead end (unless you have a rooted phone). The only option then probably would have been to create a touch command based adb script to export each of the songs to a Spotify playlist. And while that wouldn't have required manual work (beyond the scripting), it would have still taken time. That was the last thing I wanted to do. 
+Next, to figure out which package the app corresponds to, I list the system packages (`./adb.exe shell pm packages list -s`) and grep for the phrase `com.google`; this makes it fairly easy. The package is `com.google.intelligence.sense`.
+
+The next part requires a bit of luck, and thankfully, Google hasn't disabled the `android:allowBackup` flag in the app. If they had, this would have been a dead end (unless you have a rooted phone). The only option then probably would have been to create a touch command based adb script to export each of the songs to a Spotify playlist. And while that wouldn't have required manual work (beyond the scripting), it would have still taken time. That is the last thing I want to do. 
 
 But luckily adb debugging on `com.google.intelligence.sense` remains enabled, either because of an oversight, or as an intended 'feature'. We can then backup all app data to our pc:
 
@@ -35,10 +36,10 @@ WARNING: adb backup is deprecated and may be removed in a future release
 Now unlock your device and confirm the backup operation...
 ```
 
-(Another useful feature that's deprecated by Google, what a surprise). Confirm the backup on your device, and it should finish in under a minute. My app has a lot of something called Superpacks which inflate the backup size to around 170 Mb for me.
+(Another useful feature that's deprecated by Google, what a surprise). Confirm the backup on your device, and it should finish in under a minute. My app has a lot of something called Superpacks which inflate the backup size to around 170 Mb.
 
 ### Extracting the database file
-Now that we've extracted the data, it's time to un-archive it and extract the db. Android backups are essentially tar gzip archives with a bit of a header twist. There are many ways to extract them (including a java utility called [Android backup extractor](https://github.com/nelenkov/android-backup-extractor)), but I just used the following command:
+Now that we've extracted the app data, it's time to un-archive it and extract the db. Android backups are essentially tar gzip archives with a bit of a header twist. There are many ways to extract them (including a java utility called [Android backup extractor](https://github.com/nelenkov/android-backup-extractor)), but I just used the following command:
 
 ```sh
 ( printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" ; tail -c +25 ambient.ab ) | tar xfvz -
