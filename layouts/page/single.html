@@ -3,12 +3,14 @@
 
 {{ partial "sidebar.html" . }}
 
-  <div class="content container">
-  <div class="post">
-    <h1 class="post-title">{{ .Title }}</h1>
-    {{ .Content }}
-  </div>
-  </div>
+<div class="content container">
+    <div class="post">
+        <h1 class="post-title">{{ .Title }}</h1>
+        {{ .Content }}
+    </div>
+</div>
 
-  </body>
+</body>
+
+{{ partial "google_analytics.html" . }}
 </html>
