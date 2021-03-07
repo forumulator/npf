@@ -41,7 +41,7 @@
 }
 
 html {
-    font-weight: 300;
+    font-weight: 400;
     overflow-x: hidden;
 }
 
@@ -75,6 +75,10 @@ code, pre {
 .highlight pre {
     white-space: pre;
     overflow-x: auto;
+}
+
+.post p {
+    font-size: 18px;
 }
 
 .mermaid svg {
