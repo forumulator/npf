@@ -1,0 +1,10 @@
+# Add robots.txt for all branches except prod.
+[context.branch-deploy]
+    command = "mkdir public/ && touch public/robots.txt && hugo"
+
+[[headers]]
+    # Define which paths this specific [[headers]] block will cover.
+    for = "/cv.pdf"
+
+    [headers.values]
+        Content-Disposition = "inline; filename=PranjalAgrawal-Resume.pdf"
