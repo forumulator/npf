@@ -4,7 +4,7 @@ title = "prag.io"
 theme = ["hugo-redirect", "hyde"]
 googleAnalytics = "UA-167472412-1"
 copyright = "Pranjal Agrawal"
-disqusShortname = "gcc42"
+enableGitInfo = true
 
 [Author]
 	name = "Pranjal Agrawal"
