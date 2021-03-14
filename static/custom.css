@@ -330,3 +330,7 @@ code, pre {
     -ms-user-select: none; /* IE10+ */
     cursor: pointer;
 }
+
+.pull-right {
+    float: right;
+}
