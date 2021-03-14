@@ -21,6 +21,8 @@ disqusShortname = "gcc42"
 [markup]
   [markup.highlight]
     style = "monokailight"
+  	lineNumbersInTable = true
+	noClasses = false
 
 [params]
 	description = "The Possimpible."
