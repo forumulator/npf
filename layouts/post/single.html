@@ -22,7 +22,7 @@
     {{- end }}
 
     {{ if .Params.series }}
-        {{ $link := .Permalink }}
+        {{ $link := .RelPermalink }}
 	    {{ $name := index .Params.series 0 }}
 	    <hr/>
     	<p><a href="" id="series"></a>This is a post in the <b>{{$name}}</b> series.<br/>
@@ -32,10 +32,10 @@
         <ul class="series">
         {{ range $series.Pages }}
             <li>{{.Date.Format "Jan 02, 2006"}} -
-            {{ if eq .Permalink $link }}
+            {{ if eq .RelPermalink $link }}
                 {{.LinkTitle}}
             {{else}}
-                <a href="{{.Permalink}}">{{.LinkTitle}} </a>
+                <a href="{{.RelPermalink}}">{{.LinkTitle}} </a>
             {{end}}
             </li>
         {{end}}
