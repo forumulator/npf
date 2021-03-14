@@ -15,7 +15,8 @@
     	<p class="seriesname">Series: <a href="/series/{{$name | urlize}}">{{$name}}</a></p>
     {{end}}
     {{ .Content }}
-    {{ if not (eq .Date .Lastmod) -}}
+    <hr />
+    {{ if not (eq (.Date.Format "January 2, 2006") (.Lastmod.Format "January 2, 2006")) -}}
         <span class="post-date" style="font-style: italic;padding-top: 10px;">
             Last modified {{ .Lastmod.Format "Jan 2, 2006" }}
         </span>
@@ -24,7 +25,6 @@
     {{ if .Params.series }}
         {{ $link := .RelPermalink }}
 	    {{ $name := index .Params.series 0 }}
-	    <hr/>
     	<p><a href="" id="series"></a>This is a post in the <b>{{$name}}</b> series.<br/>
     	Other posts in this series:</p>
         {{ $name := $name | urlize }}
